@@ -21,14 +21,22 @@ Brief description of your project goes here.
 | SQL Workbench | Tool used for working with MySQL databases, including design and management |
 | Prisma        | Next-generation ORM that helps to interact with databases in a type-safe way|
 
-## Installation
+## Installation and Commands
 
-Instructions on how to set up the project, install dependencies, and run it locally.
+### Step 1: Initialize the Project
+```bash
+npm init -y
 
-## Usage
+```
+### Step 2: Install Dependencies
+```bash
+npm install express morgan body-parser cors nodemon jsonwebtoken bcrypt
 
-Explanation of how the project works, including the main features or API endpoints.
+```
 
-## License
+### Step 3: Install Prisma and Set Up the Database
+```bash
+npm install @prisma/client
+npx prisma migrate dev --name name_of_database
 
-Details about licensing (if applicable).
+```
