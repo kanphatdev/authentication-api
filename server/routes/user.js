@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const {update,remove,list} = require("../controllers/user")
+router.get('/users',list)
+router.patch('/users/:userId',update)
+router.delete('/users/:userId',remove)
 
-router.get('/users',(req,res) => {
-res.send("Welcome user!");
-})
 module.exports = router;
